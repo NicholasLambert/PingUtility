@@ -9,7 +9,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JTextArea;
 
-public class FindDeviceOnNetwork {
+public class GUI {
 
 	private JFrame frame;
 
@@ -20,7 +20,7 @@ public class FindDeviceOnNetwork {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					FindDeviceOnNetwork window = new FindDeviceOnNetwork();
+					GUI window = new GUI();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -32,7 +32,7 @@ public class FindDeviceOnNetwork {
 	/**
 	 * Create the application.
 	 */
-	public FindDeviceOnNetwork() {
+	public GUI() {
 		initialize();
 	}
 
