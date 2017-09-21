@@ -6,7 +6,7 @@ public class pingDevice {
 	
 	//Variables
 	String building = "";
-	int room = 0;
+	String room = "";
 	String device = "";
 	String domain = "";
 	
@@ -16,7 +16,7 @@ public class pingDevice {
 	}
 	
 	
-	void setRoom(int roomNum) {
+	void setRoom(String roomNum) {
 		room = roomNum;
 	}
 	
@@ -57,5 +57,11 @@ public class pingDevice {
 		}
 		
 		return returnString;
+	}
+	
+	
+	//Check if the room number is less than 3 digits
+	public static void checkRoomNum(String curNum) {
+		
 	}
 }
